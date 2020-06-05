@@ -7,10 +7,11 @@ Made it for my personal use
 
 ### Compil
 
-`git clone --recursice https://github.com/SegFault42/sys-ftpd-ovl
-
-cd sys-ftp-ovld
-make`
+```
+$ git clone --recursice https://github.com/SegFault42/sys-ftpd-ovl
+$ cd sys-ftp-ovld
+$ make
+```
 
 ### Download
 
