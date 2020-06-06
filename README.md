@@ -1,7 +1,7 @@
 # sys-ftpd-ovl
 ovl for sysftpd homebrew
 
-## Unofficial ftpd overlay
+## Unofficial sys-ftpd overlay
 
 Made it for my personal use
 
