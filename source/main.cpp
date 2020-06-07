@@ -32,6 +32,11 @@ class GuiTest : public tsl::Gui {
         	// A list that can contain sub elements and handles scrolling
         	auto list = new tsl::elm::List();
 
+    		// Get Ip address
+			tsl::hlp::doWithSmSession([]{
+				gethostname(hostname, sizeof(hostname));
+            });
+
         	list->addItem(new tsl::elm::ListItem("Ip : ", hostname));
 
         	// Create and add a new list item to the list
@@ -63,10 +68,6 @@ class OverlayTest : public tsl::Overlay {
     	}  // Callet at the end to clean up all services previously initialized
 
     	virtual void onShow() override {
-    		// Get Ip address
-			tsl::hlp::doWithSmSession([]{
-				gethostname(hostname, sizeof(hostname));
-            });
     	}    // Called before overlay wants to change from invisible to visible state
     	virtual void onHide() override {}    // Called before overlay wants to change from visible to invisible state
 
